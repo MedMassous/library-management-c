@@ -128,16 +128,7 @@ Le projet ne se contente pas d'une simple récursion d'affichage. Il démontre p
 - **Structures:** 2
 - **Options du menu:** 12
 
----
 
-## 🎬 Guide de Démonstration
-
-Pour présenter ce projet efficacement, consultez:
-1. **SCENARIO_DEMONSTRATION.md** - Script détaillé de présentation
-2. **NOUVELLES_FONCTIONNALITES.md** - Explication de chaque fonctionnalité
-3. **COMPARAISON.md** - Ce qui a été ajouté et pourquoi
-
----
 
 ## 🔍 Exemples d'Utilisation
 
@@ -217,61 +208,6 @@ Choix: 3 (Par année)
   - ✅ Types personnalisés (struct)
   - ✅ Pointeurs
   - ✅ Fichiers texte
-
----
-
-## 🎯 Utilisation pour la Présentation
-
-### Ordre Recommandé
-1. Montrer le menu et les fonctionnalités
-2. Ajouter quelques livres
-3. Démontrer recherche et affichage
-4. **Mettre en avant les statistiques (récursion!)**
-5. Montrer le filtrage (récursion!)
-6. Démontrer tri et modification
-7. Exporter un rapport
-8. Ouvrir le code et expliquer les concepts
-
-### Temps Estimé
-- Démonstration complète: 10-12 minutes
-- Version courte: 5-7 minutes
-
----
-
-## 💡 Conseils
-
-### Pour la Présentation
-- Préparez des données de test à l'avance
-- Testez tout avant de présenter
-- Concentrez-vous sur la récursion (4 fonctions!)
-- Montrez le code source pour les concepts clés
-- Soyez confiant - c'est un excellent projet!
-
-### Pour le Code
-- Le code est bien commenté
-- Chaque fonction a un rôle clair
-- L'organisation est modulaire
-- La validation est robuste
-
----
-
-## 🚀 Possibilités d'Extension
-
-Si vous voulez aller encore plus loin:
-- Ajouter une catégorie aux livres
-- Implémenter un système d'emprunteurs
-- Ajouter des dates d'emprunt
-- Créer des statistiques plus détaillées
-- Implémenter une recherche avancée
-
----
-
-## 📞 Support
-
-Pour toute question sur le projet:
-1. Consultez les fichiers de documentation
-2. Lisez les commentaires dans le code
-3. Testez les fonctionnalités une par une
 
 ---
 
