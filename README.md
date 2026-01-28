@@ -3,7 +3,6 @@
 A comprehensive library management system developed in C, demonstrating advanced programming concepts including recursion, pointers, file handling, and data structures.
 
 [![Language](https://img.shields.io/badge/language-C-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 🎯 Overview
 
