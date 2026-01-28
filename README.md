@@ -1,226 +1,221 @@
-# 📚 Système de Gestion de Bibliothèque
+# 📚 Library Management System
 
-## 🎯 Vue d'Ensemble
+## 🎯 Overview
 
-Ce projet est un système complet de gestion de bibliothèque développé en C. Il permet de gérer une collection de livres avec toutes les opérations nécessaires: ajout, recherche, emprunt, modification, suppression, statistiques et export de rapports.
-
-
----
-
-## 📋 Fonctionnalités
-
-### Fonctionnalités de Base
-1. ✅ **Ajouter un livre** - Ajouter de nouveaux livres à la bibliothèque
-2. ✅ **Rechercher un livre** - Rechercher par titre ou auteur
-3. ✅ **Afficher tous les livres** - Liste complète avec récursion
-4. ✅ **Emprunter un livre** - Marquer un livre comme emprunté
-5. ✅ **Retourner un livre** - Marquer un livre comme disponible
-
-### Fonctionnalités Avancées (NOUVEAU!)
-6. ✅ **Supprimer un livre** - Retirer un livre de la collection
-7. ✅ **Modifier un livre** - Changer les informations d'un livre
-8. ✅ **Afficher les statistiques** - Vue d'ensemble avec comptage récursif
-9. ✅ **Filtrer les livres** - Afficher seulement disponibles ou empruntés (récursif)
-10. ✅ **Trier les livres** - Trier par titre, auteur ou année
-11. ✅ **Exporter un rapport** - Générer un rapport texte complet
-
-### Fonctionnalités Système
-12. ✅ **Sauvegarder automatiquement** - Sauvegarde dans un fichier texte
-13. ✅ **Charger automatiquement** - Chargement au démarrage
+This project is a comprehensive library management system developed in C. It allows you to manage a book collection with all necessary operations: adding, searching, borrowing, modifying, deleting, statistics, and report export.
 
 ---
 
-## 🔧 Compilation et Exécution
+## 📋 Features
 
-### Compiler
+### Basic Features
+1. ✅ **Add a book** - Add new books to the library
+2. ✅ **Search for a book** - Search by title or author
+3. ✅ **Display all books** - Complete list with recursion
+4. ✅ **Borrow a book** - Mark a book as borrowed
+5. ✅ **Return a book** - Mark a book as available
+
+### Advanced Features (NEW!)
+6. ✅ **Delete a book** - Remove a book from the collection
+7. ✅ **Modify a book** - Change book information
+8. ✅ **Display statistics** - Overview with recursive counting
+9. ✅ **Filter books** - Display only available or borrowed books (recursive)
+10. ✅ **Sort books** - Sort by title, author, or year
+11. ✅ **Export a report** - Generate a complete text report
+
+### System Features
+12. ✅ **Auto-save** - Save to a text file
+13. ✅ **Auto-load** - Load on startup
+
+---
+
+## 🔧 Compilation and Execution
+
+### Compile
 ```bash
 gcc bibliotheque_enhanced.c -o bibliotheque
 ```
 
-### Exécuter
+### Run
 ```bash
 ./bibliotheque
 ```
 
 ---
 
-## 📁 Structure du Projet
+## 📁 Project Structure
 
 ```
 .
-├── bibliotheque_enhanced.c         # Code source principal
-├── bibliotheque.txt                # Fichier de sauvegarde (généré)
-├── rapport_bibliotheque.txt        # Rapport exporté (généré)
-├── NOUVELLES_FONCTIONNALITES.md    # Documentation des ajouts
-├── COMPARAISON.md                  # Avant/Après
-├── SCENARIO_DEMONSTRATION.md       # Guide de présentation
-└── README.md                       # Ce fichier
+├── bibliotheque_enhanced.c         # Main source code
+├── bibliotheque.txt                # Save file (generated)
+├── rapport_bibliotheque.txt        # Exported report (generated)
+├── NOUVELLES_FONCTIONNALITES.md    # New features documentation
+├── COMPARAISON.md                  # Before/After comparison
+├── SCENARIO_DEMONSTRATION.md       # Presentation guide
+└── README.md                       # This file
 ```
 
 ---
 
-## 💻 Concepts C Utilisés
+## 💻 C Concepts Used
 
 ### ✅ Structures (struct)
-- `Livre` - Structure pour stocker les informations d'un livre
-- `Bibliotheque` - Structure contenant un tableau de livres
+- `Livre` - Structure to store book information
+- `Bibliotheque` - Structure containing an array of books
 
-### ✅ Pointeurs
-- Passage par référence dans toutes les fonctions de modification
-- Manipulation efficace des structures
-- Accès direct aux données sans copies
+### ✅ Pointers
+- Pass by reference in all modification functions
+- Efficient structure manipulation
+- Direct data access without copies
 
-### ✅ Récursion (4 fonctions récursives!)
-1. `afficherLivresRecursif()` - Affichage récursif
-2. `compterDisponiblesRecursif()` - Comptage récursif avec retour
-3. `compterEmpruntesRecursif()` - Comptage récursif avec condition
-4. `afficherLivresFiltresRecursif()` - Affichage conditionnel récursif
+### ✅ Recursion (4 recursive functions!)
+1. `afficherLivresRecursif()` - Recursive display
+2. `compterDisponiblesRecursif()` - Recursive counting with return
+3. `compterEmpruntesRecursif()` - Recursive counting with condition
+4. `afficherLivresFiltresRecursif()` - Conditional recursive display
 
-### ✅ Fichiers Texte
-- Sauvegarde des données
-- Chargement automatique
-- Export de rapports formatés
+### ✅ Text Files
+- Data saving
+- Automatic loading
+- Formatted report export
 
-### ✅ Tableaux
-- Stockage des livres
-- Manipulation (tri, suppression avec décalage)
+### ✅ Arrays
+- Book storage
+- Manipulation (sorting, deletion with shift)
 
-### ✅ Chaînes de caractères
-- Manipulation avec `strcpy`, `strcmp`, `strstr`
-- Validation et recherche
-- Conversion en minuscules
+### ✅ Strings
+- Manipulation with `strcpy`, `strcmp`, `strstr`
+- Validation and search
+- Lowercase conversion
 
-### ✅ Fonctions
-- Organisation modulaire (21 fonctions)
-- Séparation des responsabilités
-- Code réutilisable
-
----
-
-## 🎓 Points Pédagogiques
-
-### Démonstration de Maîtrise
-
-#### Récursion - Niveau Avancé
-Le projet ne se contente pas d'une simple récursion d'affichage. Il démontre plusieurs utilisations:
-- **Affichage** - Parcours simple
-- **Comptage** - Accumulation de résultats
-- **Filtrage** - Récursion avec conditions
-
-#### Manipulation d'Arrays
-- Ajout d'éléments
-- Suppression avec décalage
-- Tri (algorithme de tri à bulles)
-- Parcours et recherche
-
-#### Gestion de Fichiers
-- Lecture et écriture formatées
-- Gestion d'erreurs
-- Multiples fichiers (données + rapports)
+### ✅ Functions
+- Modular organization (21 functions)
+- Separation of concerns
+- Reusable code
 
 ---
 
-## 📊 Statistiques du Code
+## 🎓 Educational Points
 
-- **Lignes de code:** ~820
-- **Fonctions:** 21
-- **Fonctions récursives:** 4
+### Mastery Demonstration
+
+#### Recursion - Advanced Level
+The project doesn't settle for simple display recursion. It demonstrates several uses:
+- **Display** - Simple traversal
+- **Counting** - Result accumulation
+- **Filtering** - Recursion with conditions
+
+#### Array Manipulation
+- Adding elements
+- Deletion with shift
+- Sorting (bubble sort algorithm)
+- Traversal and search
+
+#### File Management
+- Formatted reading and writing
+- Error handling
+- Multiple files (data + reports)
+
+---
+
+## 📊 Code Statistics
+
+- **Lines of code:** ~820
+- **Functions:** 21
+- **Recursive functions:** 4
 - **Structures:** 2
-- **Options du menu:** 12
+- **Menu options:** 12
 
+---
 
+## 🔍 Usage Examples
 
-## 🔍 Exemples d'Utilisation
-
-### Ajouter un livre
+### Add a book
 ```
 Option: 1
-Titre: Le Petit Prince
-Auteur: Antoine de Saint-Exupéry
-Année: 1943
-→ Livre ajouté avec succès! (ID: 1)
+Title: The Little Prince
+Author: Antoine de Saint-Exupéry
+Year: 1943
+→ Book successfully added! (ID: 1)
 ```
 
-### Rechercher
+### Search
 ```
 Option: 2
-Recherche: "prince"
-→ Trouve "Le Petit Prince"
+Search: "prince"
+→ Finds "The Little Prince"
 ```
 
-### Statistiques
+### Statistics
 ```
 Option: 8
-→ Nombre total de livres : 4
-→ Livres disponibles     : 3 (75.0%)
-→ Livres empruntés       : 1 (25.0%)
+→ Total number of books : 4
+→ Available books       : 3 (75.0%)
+→ Borrowed books        : 1 (25.0%)
 ```
 
-### Filtrer
+### Filter
 ```
 Option: 9
-Choix: 1 (Disponibles)
-→ Affiche uniquement les livres disponibles
+Choice: 1 (Available)
+→ Displays only available books
 ```
 
-### Trier
+### Sort
 ```
 Option: 10
-Choix: 3 (Par année)
-→ Livres triés de 1862 à 1997
+Choice: 3 (By year)
+→ Books sorted from 1862 to 1997
 ```
 
 ---
 
-## ✨ Points Forts du Projet
+## ✨ Project Strengths
 
-1. **Complet** - Couvre tous les aspects d'une gestion de bibliothèque
-2. **Concepts Maîtrisés** - Utilisation variée et appropriée
-3. **Récursion Intelligente** - Pas forcée, mais bien intégrée
-4. **Code Propre** - Facile à lire et à comprendre
-5. **Robuste** - Gestion d'erreurs et validation
-6. **Extensible** - Structure permet d'ajouter facilement des fonctions
-7. **Professionnel** - Export de rapports, statistiques
+1. **Complete** - Covers all aspects of library management
+2. **Mastered Concepts** - Varied and appropriate usage
+3. **Intelligent Recursion** - Not forced, but well integrated
+4. **Clean Code** - Easy to read and understand
+5. **Robust** - Error handling and validation
+6. **Extensible** - Structure allows easy addition of functions
+7. **Professional** - Report export, statistics
 
 ---
 
-## 🆚 Comparaison: Original vs Amélioré
+## 🆚 Comparison: Original vs Enhanced
 
-| Aspect | Original | Amélioré |
+| Aspect | Original | Enhanced |
 |--------|----------|----------|
-| Fonctions | 13 | 21 |
+| Functions | 13 | 21 |
 | Menu | 6 options | 12 options |
-| Récursion | 1 fonction | 4 fonctions |
-| Fichiers | 1 | 2 |
+| Recursion | 1 function | 4 functions |
+| Files | 1 | 2 |
 
 ---
 
-## 📝 Validation des Exigences
+## 📝 Requirements Validation
 
-### Exigences du Projet
-- ✅ Écrit en C
-- ✅ Facile à comprendre
-- ✅ Facile à présenter
-- ✅ Utilise TOUS les concepts requis:
-  - ✅ Tableaux et chaînes de caractères
-  - ✅ Fonctions
-  - ✅ Fonctions récursives (4 fonctions!)
-  - ✅ Types personnalisés (struct)
-  - ✅ Pointeurs
-  - ✅ Fichiers texte
+### Project Requirements
+- ✅ Written in C
+- ✅ Easy to understand
+- ✅ Easy to present
+- ✅ Uses ALL required concepts:
+  - ✅ Arrays and strings
+  - ✅ Functions
+  - ✅ Recursive functions (4 functions!)
+  - ✅ Custom types (struct)
+  - ✅ Pointers
+  - ✅ Text files
 
 ---
 
 ## 🏆 Conclusion
 
-Ce projet démontre une maîtrise complète des concepts C requis avec:
-- Un système fonctionnel et complet
-- Une utilisation variée de la récursion
-- Une organisation professionnelle du code
-- Des fonctionnalités avancées
+This project demonstrates complete mastery of required C concepts with:
+- A functional and complete system
+- Varied use of recursion
+- Professional code organization
+- Advanced features
 
 ---
-
-
-
-
