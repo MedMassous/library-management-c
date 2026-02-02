@@ -3,6 +3,7 @@
 A comprehensive library management system developed in C, demonstrating advanced programming concepts including recursion, pointers, file handling, and data structures.
 
 [![Language](https://img.shields.io/badge/language-C-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![CodeFactor](https://www.codefactor.io/repository/github/medmassous/library-management-c/badge)](https://www.codefactor.io/repository/github/medmassous/library-management-c)
 
 ## 🎯 Overview
 
