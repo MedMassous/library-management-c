@@ -95,10 +95,7 @@ library-management-system/
 ├── bibliotheque_enhanced.c         # Main source code
 ├── bibliotheque.txt                # Data file (auto-generated)
 ├── rapport_bibliotheque.txt        # Export reports (auto-generated)
-├── docs/
-│   ├── NOUVELLES_FONCTIONNALITES.md
-│   ├── COMPARAISON.md
-│   └── SCENARIO_DEMONSTRATION.md
+
 └── README.md
 ```
 
